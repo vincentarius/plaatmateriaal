@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Plaatmateriaal
+    </title>
+    <script src="plaatmateriaal.js"></script>
+    <script src="voorraad.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link 
+        rel="stylesheet" 
+        href="https://fonts.googleapis.com/css?family=Abel">
+    <link 
+        rel="stylesheet" 
+        href="plaatmateriaal.css">
+
+
+</head>
+<body onload="lijstPlaatmateriaal()">
+
+    <div id="plaatmateriaal">
+        <div>
+            <select id="plaatmateriaalSelectie" style="display: inline;"></select>        
+            <button onclick="verwijderPlaatmateriaal()" style="display: inline;">Plaatmateriaal verwijderen</button>
+            <div id="verwijderBevestiging" style="display: inline;"></div>
+        </div>
+
+        <div>
+            <input type="text" id="mySubmit" onfocus="this.value=''" style="display: inline;">
+            
+            <button onclick="voegToePlaatmateriaal()" 
+                    style="display: inline;">
+                    Plaatmateriaal toevoegen
+            </button>
+        </div>
+        <div id="toevoegBevestiging" style="display: inline;"></div>
+    </div>
+
+    <div id="voorraad" onclick="toonVoorraad()">
+
+    </div>
+
+    <div id="voorraadInvoer">
+        <label for="lengte">Lengte:</label style="display: inline">   
+        <input type="number" name="lengte" id="lengte" onfocus="this.value=''" style="display: inline;">
+        </br>
+        <label for="breedte">Breedte:</label>
+        <input type="number" name="breedte" id="breedte" onfocus="this.value=''">
+        </br>
+        <label for="dikte">Dikte:</label>
+        <input type="number" name="dikte" id="dikte" onfocus="this.value=''">
+        </br>
+        <label for="aantal">Aantal:</label>
+        <input type="number" name="aantal" id="aantal" onfocus="this.value=''">
+    </div>
+
+    <button onclick="voegToeAanVoorraad()" 
+        style="display: inline;">
+        Voorraad toevoegen
+    </button>
+
+</body>
+
+
+</html>

@@ -1,0 +1,31 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#plaatmateriaal {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    border: solid;
+    border-color: salmon;
+    background-color: tomato;
+}
+
+#voorraad {
+    position: absolute;
+    top: 80px;
+    left: 320px;
+    border: solid;
+    border-color: salmon;
+    background-color: tomato;
+}
+
+#voorraadInvoer {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    width: 300px;
+    border: solid;
+    border-color: salmon;
+    background-color: tomato;
+}
